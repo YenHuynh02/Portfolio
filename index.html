@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yen Huynh - Portfolio</title>
+    <link rel="shortcut icon" type="x-icon" href="images/WebLogo.png"></i>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f4114c6868.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Project</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <div class="text-animate">
+                    <p id="text-cursor">Computer&nbsp;Engineering&nbsp;Technology</p>
+                </div>
+                <br>
+                <h1>Hi, I'm <span>Yen</span><br>Huynh from Vietnam</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--About myself-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About me</h1>
+                    <p>I'm pursuing a Bachelor's Degree in Computer Engineering Technology -
+                        Computing Science with a concentration on a bilingual environment
+                        (English and Vietnamese). Throughout my education, I obtained experience 
+                        in communication skills, design, implementation, and maintenance, as well
+                        as problem-solving.
+                        I've also worked on applications that used virtualization technologies like VMware, Visual
+                        Studio Code, or Structure Query Language (SQL).
+                        My hands-on experience and academic knowledge of technologies such as Java, Linux (Ubuntu),
+                        Database, Windows, HTML, IP networking, and Hardware/ Software components (Cloud, and Microsoft
+                        Office/ MS Office)</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active" onclick="opentab('skills')" id="first">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')" id="second">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')" id="third">Education</p>
+                    </div>
+                    <div class="tab-contents active" id="skills">
+                        <ul>
+                            <li><span>SQL Development</span><br>Organized database</li>
+                            <li><span>Web Development</span><br>Designed website</li>
+                            <li><span>Java Development</span><br>Logistics & Algorithms</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - 2023</span><br>Pizza Menu</li>
+                            <li><span>2023</span><br>Painting Portal</li>
+                            <li><span>2023</span><br>Food Inventory</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021</span><br>Technical Support Fundamentals</li>
+                            <li><span>2021 - 2022</span><br>Ontario Secondary School Diploma</li>
+                            <li><span>2022 - 2025</span><br>Bachelor's Degree || Computer Engineering Technology</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Projects-->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Projects</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Pizza Menu</h2>
+                    <p>I developed the Pizza Menu SQL database table.
+                        MySQL Workbench 8.0 CE is the name of the software.
+                        Customer, Order, Receipt, and Pizza Building are the tables.
+                        Each entity will serve a distinct role. The customer entity is used to track the client's
+                        customers, the Order entity provides data about the products a customer orders, Receipt assists the client
+                        in calculating the amount of the order, which includes taxes, and finally, Building the pizza is for customers who wish 
+                        to make their own pizza.
+
+                    </p>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-php"></i>
+                    <h2>Painting Portal</h2>
+                    <p>I designed a website that incorporates the concepts of the Amazone app. Customers can select
+                        each genre of artwork and add it to their shopping basket for purchase. If it is the customer's
+                        first visit to the shop, he or she must create an account before proceeding with the purchase. This website connects to the
+                        database using the class mysqli() and makes use of the entities and attributes contained within the table. To see if ($_SESSION['login']) is
+                        true, use the syntax isset().</p>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Food Inventory</h2>
+                    <p>I created four sub-classes of products that inherit the superclass to obtain information about
+                        the item code, name, sales price, quantity, and cost.
+                        The name of the orchard, farm, or size will be assigned to each subclass based on the class
+                        property. This class's purpose is to check the value and provide alternates for running.
+                        In total, there were eight options: add an item, display storage or inventory, buy stock, sell
+                        the stock, search for an item in inventory, save to file, read from file and paste into
+                        inventory, and to stop.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/pizza.jpg">
+                    <div class="layer">
+                        <h3>Pizza Menu</h3>
+                        <p> MySQL Workbench 8.0 CE is the name of the software.
+                            Customer, Order, Receipt, and Pizza Building are the tables.</p>
+                        <a href="https://github.com/YenHuynh02/SQL.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/painting.jpg">
+                    <div class="layer">
+                        <h3>Painting Portal</h3>
+                        <p>Description</p>
+                        <a href="https://github.com/YenHuynh02/WebDevelopment.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Food.jpg">
+                    <div class="layer">
+                        <h3>Food Inventoty</h3>
+                        <p>Description</p>
+                        <a href="https://github.com/YenHuynh02/Food-Inventory.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/YenHuynh02" target="_blank" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!--Contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><a href="mailto:huyn0115@algonquinlive.com"><i class="fa-regular fa-paper-plane"></i>
+                            huyn0115@algonquinlive.com</a></p>
+                    <p><a href="tel:3439873185"><i class="fa-solid fa-square-phone"></i> (343) 987-3185</a></p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/yen-huynh-pp12" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/YenHuynh02" target="_blank"><i
+                                class="fa-brands fa-github"></i></i></a>
+                    </div>
+                    <a href="images/Resume - Yen Huynh.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" id="name" placeholder="Your Name" required>
+                        <input type="email" name="Email" id="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="10" id="message" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2" id="submit">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i>&copy;</i> Yen Huynh</p>
+        </div>
+    </div>
+
+    <script>
+        var links = document.getElementsByClassName("tab-links");
+        var contents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablinks of links) {
+                tablinks.classList.remove("active");
+            }
+
+            for (tabContents of contents) {
+                tabContents.classList.remove("active");
+            }
+            /*Active when clicked on each tab content*/
+            event.currentTarget.classList.add("active");
+
+            /*Get ID  of each tab content and display the content of each and make it active*/
+            document.getElementById(tabname).classList.add("active");
+        }
+    </script>
+
+    <script>
+        var sideMenu = document.getElementById("sidemenu");
+        function openMenu() {
+            sideMenu.style.right = "0"; /*Move menu side bar to the left by setting right = 0 */
+        }
+
+        function closeMenu() {
+            sideMenu.style.right = "-200px"; /*Move menu side bar to the right */
+        }
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx4sC8SP5vLZOLJYz00SlihzAgelmUfv1Uy6z9qqjJJQKWojJB5KIpjr2LhAC4C-qpXgw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent succcessfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
